@@ -8,53 +8,81 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
-    rel="stylesheet">
+    rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </head>
   
-  <body>
+  <body class="">
+    <div class="navbar navbar-default navbar-static-top">
+      <style>
+        .body{padding-top:70px}
+      </style>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <pre><code>쪽지쓰기</code></pre>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <form class="form-horizontal" role="form">
-            <div class="form-group">
-              <div class="col-sm-2">
-                <label for="inputEmail3" class="control-label">이름</label>
-              </div>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="name">
-              </div>
+        <div class="col-md-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">이름</h3>
             </div>
-            <div class="form-group">
-              <div class="col-sm-2">
-                <label for="inputPassword3" class="control-label">내용</label>
-              </div>
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="content">
-              </div>
+            <div class="panel-body">
+              <p>Panel content</p>
             </div>
-            <div class="form-group">
-              <div class="col-sm-2">
-                <label for="inputPassword3" class="control-label">첨부파일</label>
-              </div>
-              <div class="col-md-10">
-                <input type="text" class="form-control" id="inputPassword3" placeholder="file">
-              </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">내용(5000Byte)</h3>
             </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">보내기</button>
-                <button type="submit" class="btn btn-default">보낸후 삭제</button>
-                <button type="submit" class="btn btn-default">취소</button>
-              </div>
+            <div class="panel-body">
+              <p>Panel content</p>
             </div>
-          </form>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">첨부파일</h3>
+            </div>
+            <div class="panel-body">
+              <p>Panel content</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <a class="btn btn-primary">보내기</a>
+          <a class="btn btn-primary">보낸후 삭제</a>
+          <a class="btn btn-primary">취소</a>
         </div>
       </div>
     </div>

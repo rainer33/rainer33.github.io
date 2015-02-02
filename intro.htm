@@ -47,14 +47,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <h2>intro</h2>
-          <p>자신만의 개발팁을 공유합시다.
+          <p draggable="true">자신만의 개발팁을 공유합시다.
             <br>개발팁은 오프라인에서도 볼수 있습니다.</p>
-          <a class="btn btn-primary" href="#">게시글 작성</a>
+          <a class="btn btn-primary" href="writeNote1.htm"
+          id="btnWrite">게시글 작성</a>
         </div>
-        <div class="col-md-6">
-          <table class="table">
+        <div class="col-md-4">
+          <table class="table" id="tblMain">
             <thead>
               <tr>
                 <th>#</th>
@@ -84,6 +85,31 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        <div class="col-md-4">
+          <ul class="pagination" id="navi">
+            <li>
+              <a href="#">Prev</a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
+              <a href="#">Next</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
